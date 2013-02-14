@@ -1,0 +1,52 @@
+\documentclass{article}
+
+\usepackage[backend=biber, maxnames=5]{biblatex}
+\addbibresource{main.bib}
+
+\usepackage{verbatim}
+\usepackage{alltt}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\usepackage{color}
+\usepackage{array}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{placeins}
+\usepackage{anyfontsize}
+
+\usepackage[normalem]{ulem} % strikethrough
+\usepackage{amssymb}
+\usepackage{pifont} % checkmarks
+
+\newcommand{\todo}[1]{\textcolor{red}{TODO: #1}}
+
+\begin{document}
+
+\title{Structuring Academic LaTeX Papers}
+
+\author{Clint Gibler}
+
+\maketitle
+
+\input{constants}
+
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+
+\input{introduction}
+\input{background}
+\input{methodology}
+\input{evaluation}
+\input{related_work}
+\input{conclusion}
+
+% New for biblatex
+\renewcommand{\bibfont}{\normalfont\small}
+\printbibliography
+
+\end{document}
